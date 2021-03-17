@@ -1,6 +1,7 @@
 export const mobileMenu = () => {
     const menuBtn = document.querySelector(".header-btn--menu");
     const slideNav = document.querySelector(".sidenav");
+    const body = document.querySelector("body");
     const menuBodyChanger = document.querySelector(".menuBodyChanger");
 
     const clickOutsideMenu = (e) => {
@@ -9,6 +10,7 @@ export const mobileMenu = () => {
             slideNav.classList.remove('sidenav--open');
             menuBtn.classList.remove('header-btn--menu--open');
             menuBodyChanger.classList.remove('menuBodyChanger--open');
+            body.classList.remove('bodynoscrolling');
         }
     };
     window.addEventListener('click', clickOutsideMenu, true);
@@ -18,6 +20,7 @@ export const mobileMenu = () => {
         slideNav.classList.toggle('sidenav--open');
         menuBtn.classList.toggle('header-btn--menu--open');
         menuBodyChanger.classList.toggle('menuBodyChanger--open');
+        body.classList.toggle('bodynoscrolling');
     });
 }
 

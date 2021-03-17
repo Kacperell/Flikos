@@ -128,6 +128,7 @@ exports.mobileMenu = void 0;
 var mobileMenu = function mobileMenu() {
   var menuBtn = document.querySelector(".header-btn--menu");
   var slideNav = document.querySelector(".sidenav");
+  var body = document.querySelector("body");
   var menuBodyChanger = document.querySelector(".menuBodyChanger");
 
   var clickOutsideMenu = function clickOutsideMenu(e) {
@@ -137,6 +138,7 @@ var mobileMenu = function mobileMenu() {
       slideNav.classList.remove('sidenav--open');
       menuBtn.classList.remove('header-btn--menu--open');
       menuBodyChanger.classList.remove('menuBodyChanger--open');
+      body.classList.remove('bodynoscrolling');
     }
   };
 
@@ -145,6 +147,7 @@ var mobileMenu = function mobileMenu() {
     slideNav.classList.toggle('sidenav--open');
     menuBtn.classList.toggle('header-btn--menu--open');
     menuBodyChanger.classList.toggle('menuBodyChanger--open');
+    body.classList.toggle('bodynoscrolling');
   });
 };
 

@@ -268,6 +268,10 @@ header .menuBodyChanger--open {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
+.bodynoscrolling {
+  overflow: hidden;
+}
+
 .topWhereAreYou {
   background-color: #EDEDED;
   padding-top: 10px;
@@ -1535,6 +1539,10 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 ::selection {
