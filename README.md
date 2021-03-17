@@ -1,5 +1,7 @@
 # Website created based on layout
 
+Preview : https://goofy-austin-db39f1.netlify.app/
+
 ## How to use this repo
 1. `npm install`
 2. `npm run dev`
