@@ -1,0 +1,88 @@
+$white:#f6f6f6;
+$blue:#346D99;
+$orange:#FCB243;
+$black:#090909;
+$grey:#EDEDED;
+$yellow:#F6C64B;
+
+$mediaquerybreakpoint:765px;
+
+@mixin primary-button {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #346D99;
+    border-radius: 50px;
+    border: 2px solid #346D99;
+    transition: all ease-in-out 0.3s;
+    font-weight: bold;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $white;
+        color: $blue;
+
+        path {
+            // if svg icon inside
+            fill: $blue;
+        }
+    }
+}
+
+@mixin primary-button-revers {
+    @include primary-button();
+    color: $blue;
+    background-color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: $blue;
+
+        path {
+            fill: $white;
+            ;
+        }
+    }
+}
+
+@mixin grey-full-underline {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: $grey;
+}
+
+@mixin yellow-underline {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 220px;
+    left: calc(50% - 110px);
+    height: 2px;
+    background-color: $yellow;
+}
+
+@mixin section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+        @include grey-full-underline();
+    }
+
+    &::after {
+        @include yellow-underline ();
+    }
+
+    span {
+        text-align: center;
+        font-size: 22px;
+    }
+}

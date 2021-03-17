@@ -1,0 +1,200 @@
+@import "../variables";
+
+footer {
+    background-color: $blue;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    color: $white;
+}
+
+.footerCategories {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mediaquerybreakpoint) {
+        flex-direction: row;
+    }
+
+    a {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+
+        @media (min-width: $mediaquerybreakpoint) {
+            width: 25%;
+            align-items: flex-start;
+        }
+
+        a,
+        span {
+            margin-top: 8px;
+        }
+
+        img {
+            display: none;
+
+            @media (min-width: $mediaquerybreakpoint) {
+                display: inline;
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+
+            }
+        }
+
+
+        &--title {
+            margin-bottom: 10px;
+
+            a {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+        }
+
+        &--information {
+
+
+            &__socialmediaicons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                justify-content: center;
+
+                @media (min-width: $mediaquerybreakpoint) {
+                    justify-content: flex-start;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin: 5px;
+                    display: inline-block;
+
+
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+
+                @media (min-width: $mediaquerybreakpoint) {
+                    text-align: left;
+                }
+
+            }
+
+            &--contact {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+        }
+
+        &--regulations,
+        &--myaccount {
+            >a {
+                //only 'a' situated directly in the div of that category 
+                //The title must be visible
+                display: none;
+            }
+
+            @media (min-width: $mediaquerybreakpoint) {
+                >a {
+                    display: inline;
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+.footerAdressLogoAndPartners {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $mediaquerybreakpoint) {
+        flex-direction: column;
+    }
+
+    &__logoAndAdres {
+        margin-top: 30px;
+        display: flex;
+        color: $white;
+        justify-content: center;
+
+
+        div,
+        span {
+            display: none;
+        }
+
+        @media (min-width: $mediaquerybreakpoint) {
+            justify-content: space-between;
+
+            div,
+            span {
+                display: flex;
+            }
+        }
+
+
+        div {
+            flex-grow: 1;
+            padding-left: 10x;
+            padding-right: 10x;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 92%;
+                left: 4%;
+                height: 1px;
+                bottom: calc(50% - 1px);
+                background-color: $grey;
+            }
+
+        }
+    }
+
+    &__partners {
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: center;
+
+        img {
+            margin-right: 10px;
+            height: 18px;
+            width: 18px;
+        }
+
+        @media (min-width: $mediaquerybreakpoint) {
+            justify-content: flex-start;
+        }
+    }
+
+}

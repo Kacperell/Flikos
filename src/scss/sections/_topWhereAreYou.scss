@@ -1,0 +1,46 @@
+@import "../variables";
+
+.topWhereAreYou {
+    background-color: $grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    span {
+        color: grey;
+        margin-right: 10px;
+
+        &.topWhereAreYou-desktopInfo {
+            display: none;
+        }
+
+        &.topWhereAreYou-mobileInfo {
+            display: inline;
+
+            &.topWhereAreYou-mobileInfo--actualPage {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        @media (min-width: $mediaquerybreakpoint) {
+            &.topWhereAreYou-desktopInfo {
+                display: inline;
+            }
+
+            &.topWhereAreYou-mobileInfo {
+                display: none;
+            }
+        }
+
+        a {
+            color: grey;
+
+            &:hover {
+                text-decoration: underline;
+                color: $black;
+            }
+        }
+
+    }
+}

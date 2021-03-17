@@ -1,0 +1,283 @@
+@import "../variables";
+
+.productBasicInfo {
+    background-color: $grey;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            background-color: $white;
+            border-radius: 1px;
+            padding: 15px;
+
+            &.productBasicInfo__photos {
+                width: 100%;
+
+                @media (min-width: $mediaquerybreakpoint) {
+                    width: 52%;
+                    position: relative;
+                    margin-right: 1%;
+                }
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .asideImage {
+                    display: none;
+
+                    @media (min-width: $mediaquerybreakpoint) {
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+
+                    .asideImage__more {
+                        border: 1px solid $grey;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            text-align: center;
+                            padding: 2px;
+                            color: $grey;
+                            color: gray;
+                        }
+                    }
+                }
+
+                .productBasicInfo__photos-mainImg {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    @media (min-width: $mediaquerybreakpoint) {
+                        width: 70%;
+                    }
+                }
+
+                .productBasicInfo__photos-baner {
+                    display: none;
+
+                    @media (min-width: $mediaquerybreakpoint) {
+                        display: block;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        padding: 3px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        background-color: $orange;
+                        color: $white;
+                        border-radius: 100px;
+                        font-family: 'Amatic SC', cursive;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &.productBasicInfo__information {
+                width: 100%;
+
+                .productBasicInfo__information-nameAndProducentLogo {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    h1 {
+                        font-weight: normal;
+                        font-size: 22px;
+
+                        @media (min-width: $mediaquerybreakpoint) {
+                            font-size: 25px;
+                        }
+                    }
+
+                    img {
+                        width: 150px;
+                        max-width: 50%;
+                    }
+                }
+
+                @media (min-width: $mediaquerybreakpoint) {
+                    width: 45%;
+                    margin-left: 2%;
+                    width: 46%;
+                    margin-left: 1%;
+
+                    .productBasicInfo__information-nameAndProducentLogo {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                }
+
+                .productBasicInfo__information-producentNumber {
+                    color: grey;
+
+                }
+
+                .productBasicInfo__information-colorVarinats {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-weight: bold;
+                        font-size: 14px;
+
+                    }
+
+                    .productBasicInfo__information-colorVarinats__colors {
+                        display: flex;
+                        margin-top: 8px;
+
+                        img {
+                            padding: 2px;
+                            margin-right: 10px;
+                            cursor: pointer;
+
+                            &.productBasicInfo__information-colorVarinats__colors--active {
+                                border: 1px solid grey;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .productBasicInfo__information-availability {
+                    display: block;
+                    font-weight: bold;
+                }
+
+                .productBasicInfo__information-supply {
+                    display: block;
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+
+                .productBasicInfo__information-priceAndInstallments {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    span {
+                        padding-right: 15px;
+
+                        &.productBasicInfo__information-priceAndInstallments--price {
+                            font-weight: bold;
+                            font-size: 24px;
+                        }
+
+                        &.productBasicInfo__information-priceAndInstallments--oldPrice {
+                            color: grey;
+                            text-decoration: line-through;
+                        }
+
+                        &.productBasicInfo__information-priceAndInstallments--sale {
+                            font-family: "Amatic SC", cursive;
+                            background-color: rgba(255, 0, 0, 0.753);
+                            color: $white;
+                            border-radius: 50px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            margin-right: 15px;
+                            font-size: 16px;
+
+                        }
+
+                        &.productBasicInfo__information-priceAndInstallments--installments {
+                            a {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+
+                .productBasicInfo__information-buyAndAddToList {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .productBasicInfo__information-buyAndAddToList-buy {
+                        display: flex;
+                        margin-bottom: 15px;
+                        margin-right: 5px;
+
+
+                        input {
+                            border: 0;
+                            width: 50px;
+                            text-align: center;
+                            background-color: $grey;
+                            border-radius: 50px;
+                            margin-right: 3px;
+                        }
+
+                        button {
+                            @include primary-button();
+                            padding: 15px;
+                            padding-left: 45px;
+                            padding-right: 45px;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .productBasicInfo__information-buyAndAddToList-addToList {
+                        a {
+                            text-decoration: underline;
+                            display: flex;
+                            flex-direction: row;
+
+
+
+                            @media (min-width: $mediaquerybreakpoint) {
+                                flex-direction: column;
+                            }
+
+                        }
+                    }
+                }
+
+                .productBasicInfo__information-additionalInfo {
+                    list-style: none;
+                    margin-top: 10px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            padding: 10px;
+                            padding-left: 0;
+                        }
+
+                        span {
+                            font-weight: bold;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

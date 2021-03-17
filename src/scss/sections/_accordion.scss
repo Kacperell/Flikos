@@ -1,0 +1,70 @@
+.accordion {
+    background-color: $white;
+
+    @media (min-width: $mediaquerybreakpoint) {
+        padding-top: 40px;
+
+    }
+
+    &-btn {
+        background-color: $white;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        transition: 0.4s;
+        padding: 18px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        @media (min-width: $mediaquerybreakpoint) {
+            @include section-title ();
+            background-color: $white;
+            pointer-events: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        span {
+            width: 100%;
+        }
+
+        img {
+            height: 18px;
+            width: 18px;
+            transition: all ease-in-out 0.2s;
+
+            &.accordion-btn-img--rotate {
+                transform: rotate(-180deg);
+            }
+
+            @media (min-width: $mediaquerybreakpoint) {
+                display: none;
+            }
+        }
+
+        &:hover,
+        &--active {
+            background-color: $grey;
+        }
+
+
+    }
+
+    &:first-of-type {
+        border-bottom: 1px solid $grey;
+    }
+
+    &-content {
+        margin-top: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        @media (min-width: $mediaquerybreakpoint) {
+            max-height: none;
+
+        }
+    }
+}

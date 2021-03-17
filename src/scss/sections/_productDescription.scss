@@ -1,0 +1,49 @@
+@import "../variables";
+
+.productDescription {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $mediaquerybreakpoint) {
+        flex-direction: row;
+    }
+
+    align-items: center;
+    padding-top: 50px;
+
+    .productDescription__content__title {
+        @include section-title ();
+
+        @media (min-width: $mediaquerybreakpoint) {
+            text-align: left;
+        }
+
+        &::after {
+            @media (min-width: $mediaquerybreakpoint) {
+                left: 0;
+            }
+        }
+    }
+
+
+    &__content {
+        width: 100%;
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            span {
+                display: block;
+            }
+
+        }
+
+        @media (min-width: $mediaquerybreakpoint) {
+            max-width: 60%;
+        }
+    }
+
+
+
+}

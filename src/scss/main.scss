@@ -1,0 +1,55 @@
+@import "./sections/_header";
+@import "./sections/_topWhereAreYou";
+@import "./sections/_productBasicInfo.scss";
+@import "./sections/_variants";
+@import "./sections/_inSet";
+@import "./sections/_productDescription";
+@import "./sections/_specification";
+@import "./sections/_bestsellery";
+@import "./sections/_accordion";
+@import "./sections/_faq";
+@import "./sections/_reviews";
+@import "./sections/_footer";
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: $yellow;
+  background: $blue;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a,
+p,
+span {
+  font-size: 13px;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+
+
+.container {
+  width: 1170px;
+  max-width: 97%;
+  margin: auto;
+}

@@ -1,0 +1,198 @@
+.reviews {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $mediaquerybreakpoint) {
+        flex-direction: row;
+    }
+
+    &__statistics {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mediaquerybreakpoint) {
+            width: 40%;
+        }
+
+        &-average {
+            display: flex;
+            justify-content: center;
+
+            span {
+                font-weight: bold;
+                margin-left: 10px;
+                font-size: 22px;
+            }
+
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        &-count {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        button {
+            @include primary-button-revers();
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        &-chart {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                width: 14px;
+                height: 14px;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+
+            &-line {
+                width: 230px;
+                position: relative;
+                height: 7px;
+                margin-right: 5px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    height: 7px;
+                    width: 230px;
+                    left: 0;
+                    height: 10px;
+                    background-color: $grey;
+                    border-radius: 10px;
+                    z-index: -1;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    width: 0;
+                    left: 0;
+                    height: 7px;
+                    background-color: $blue;
+                    border-radius: 20px;
+
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                .reviews__statistics-chart-line {
+
+                    &::after {
+                        width: 180px;
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+
+                .reviews__statistics-chart-line {
+
+                    &::after {
+                        width: 80px;
+                    }
+                }
+            }
+
+            &:nth-of-type(6) {
+
+                .reviews__statistics-chart-line {
+
+                    &::after {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        &-filtr {
+            margin-top: 15px;
+        }
+    }
+
+    &__opinions {
+        width: 100%;
+        margin-top: 30px;
+
+        @media (min-width: $mediaquerybreakpoint) {
+            width: 60%;
+        }
+
+        &-opinion {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $grey;
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+
+            &__stars {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            &__authorAndHelpful {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                div {
+                    margin-bottom: 5px;
+                }
+
+                @media (min-width: $mediaquerybreakpoint) {
+                    flex-direction: row;
+                }
+
+                button {
+                    background: 0;
+                    border: 0;
+                }
+
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
+
+    }
+}
