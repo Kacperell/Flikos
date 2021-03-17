@@ -11,9 +11,7 @@
 
 
         &::before {
-            @media (min-width: $mediaquerybreakpoint) {
-                background-color: white;
-            }
+            background-color: white;
         }
     }
 

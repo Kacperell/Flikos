@@ -52,6 +52,14 @@
                     }
 
                     form.productVariant-buy {
+
+                        @media (min-width: $mediaquerybreakpoint) {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
                         input {
                             border: 0;
                             width: 45px;
@@ -59,7 +67,7 @@
                             text-align: center;
                             background-color: $grey;
                             border-radius: 50px;
-                            margin-right: 3px;
+                            margin-right: 4px;
                         }
 
                         button {

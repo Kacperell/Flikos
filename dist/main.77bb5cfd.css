@@ -323,6 +323,7 @@ header .menuBodyChanger--open {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
 }
 @media (min-width: 765px) {
   .productBasicInfo .container article.productBasicInfo__photos {
@@ -557,6 +558,11 @@ header .menuBodyChanger--open {
   align-items: center;
   margin-right: 3px;
 }
+.productBasicInfo .container article.productBasicInfo__information .productBasicInfo__information-additionalInfo li:last-of-type span {
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+}
 
 .variants {
   background-color: #EDEDED;
@@ -605,6 +611,14 @@ header .menuBodyChanger--open {
   width: 10px;
   height: 10px;
 }
+@media (min-width: 765px) {
+  .variants .container .variants__articles article .productVariant form.productVariant-buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .variants .container .variants__articles article .productVariant form.productVariant-buy input {
   border: 0;
   width: 45px;
@@ -612,7 +626,7 @@ header .menuBodyChanger--open {
   text-align: center;
   background-color: #EDEDED;
   border-radius: 50px;
-  margin-right: 3px;
+  margin-right: 4px;
 }
 .variants .container .variants__articles article .productVariant form.productVariant-buy button {
   padding: 15px;
@@ -973,10 +987,8 @@ header .menuBodyChanger--open {
   text-align: center;
   font-size: 22px;
 }
-@media (min-width: 765px) {
-  .bestsellery__title::before {
-    background-color: white;
-  }
+.bestsellery__title::before {
+  background-color: white;
 }
 .bestsellery__articles {
   display: flex;
