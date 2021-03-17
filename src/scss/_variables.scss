@@ -16,13 +16,13 @@ $mediaquerybreakpoint:765px;
     border: 2px solid #346D99;
     transition: all ease-in-out 0.3s;
     font-weight: bold;
-    color: $white;
+    color: white;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
 
     &:hover {
-        background: $white;
+        background: white;
         color: $blue;
 
         path {
@@ -35,14 +35,14 @@ $mediaquerybreakpoint:765px;
 @mixin primary-button-revers {
     @include primary-button();
     color: $blue;
-    background-color: $white;
+    background-color: white;
 
     &:hover {
-        color: $white;
+        color: white;
         background-color: $blue;
 
         path {
-            fill: $white;
+            fill: white;
             ;
         }
     }

@@ -1,5 +1,5 @@
 .accordion {
-    background-color: $white;
+    background-color: white;
 
     @media (min-width: $mediaquerybreakpoint) {
         padding-top: 40px;
@@ -7,7 +7,7 @@
     }
 
     &-btn {
-        background-color: $white;
+        background-color: white;
         cursor: pointer;
         width: 100%;
         border: none;
@@ -20,7 +20,7 @@
 
         @media (min-width: $mediaquerybreakpoint) {
             @include section-title ();
-            background-color: $white;
+            background-color: white;
             pointer-events: none;
             padding: 0;
             text-align: center;

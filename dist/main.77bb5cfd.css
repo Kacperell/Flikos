@@ -56,7 +56,7 @@ header .container a.header-link {
 }
 header .container .header-cart {
   width: auto;
-  color: #f6f6f6;
+  color: white;
   border: 0;
 }
 @media (min-width: 765px) {
@@ -69,7 +69,7 @@ header .container .header-cart {
     border: 2px solid #346D99;
     transition: all ease-in-out 0.3s;
     font-weight: bold;
-    color: #f6f6f6;
+    color: white;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ header .container .header-cart {
     align-items: center;
   }
   header .container .header-cart:hover {
-    background: #f6f6f6;
+    background: white;
     color: #346D99;
   }
   header .container .header-cart:hover path {
@@ -89,7 +89,7 @@ header .container .header-cart {
 }
 @media (min-width: 765px) {
   header .container .header-cart path {
-    fill: #f6f6f6;
+    fill: white;
   }
 }
 header .container .header-cart span {
@@ -131,8 +131,8 @@ header .container .header-btn--menu span {
   display: block;
   position: absolute;
   height: 2px;
-  background: #f6f6f6;
-  background: #f6f6f6;
+  background: white;
+  background: white;
   border-radius: 9px;
   opacity: 1;
   width: 60%;
@@ -241,7 +241,7 @@ header .sidenav {
 header .sidenav a {
   padding: 8px 8px 8px 32px;
   font-size: 25px;
-  color: #f6f6f6;
+  color: white;
   white-space: nowrap;
   font-weight: bold;
 }
@@ -310,7 +310,7 @@ header .menuBodyChanger--open {
   flex-wrap: wrap;
 }
 .productBasicInfo .container article {
-  background-color: #f6f6f6;
+  background-color: white;
   border-radius: 1px;
   padding: 15px;
 }
@@ -375,7 +375,7 @@ header .menuBodyChanger--open {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #FCB243;
-    color: #f6f6f6;
+    color: white;
     border-radius: 100px;
     font-family: "Amatic SC", cursive;
     font-weight: bold;
@@ -471,7 +471,7 @@ header .menuBodyChanger--open {
 .productBasicInfo .container article.productBasicInfo__information .productBasicInfo__information-priceAndInstallments span.productBasicInfo__information-priceAndInstallments--sale {
   font-family: "Amatic SC", cursive;
   background-color: rgba(255, 0, 0, 0.753);
-  color: #f6f6f6;
+  color: white;
   border-radius: 50px;
   padding-left: 10px;
   padding-right: 10px;
@@ -508,7 +508,7 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
@@ -518,7 +518,7 @@ header .menuBodyChanger--open {
   margin-right: 8px;
 }
 .productBasicInfo .container article.productBasicInfo__information .productBasicInfo__information-buyAndAddToList .productBasicInfo__information-buyAndAddToList-buy button:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .productBasicInfo .container article.productBasicInfo__information .productBasicInfo__information-buyAndAddToList .productBasicInfo__information-buyAndAddToList-buy button:hover path {
@@ -560,7 +560,7 @@ header .menuBodyChanger--open {
   padding-bottom: 30px;
 }
 .variants .container {
-  background-color: #f6f6f6;
+  background-color: white;
   padding: 15px;
 }
 .variants .container .variants__title {
@@ -619,7 +619,7 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
@@ -627,7 +627,7 @@ header .menuBodyChanger--open {
   padding-right: 7px;
 }
 .variants .container .variants__articles article .productVariant form.productVariant-buy button:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .variants .container .variants__articles article .productVariant form.productVariant-buy button:hover path {
@@ -692,7 +692,7 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
@@ -707,7 +707,7 @@ header .menuBodyChanger--open {
   margin: 30px;
 }
 .inSet__content-images span:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .inSet__content-images span:hover path {
@@ -750,27 +750,27 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
   color: #346D99;
-  background-color: #f6f6f6;
+  background-color: white;
   margin-left: 10px;
 }
 .inSet__content-info button:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .inSet__content-info button:hover path {
   fill: #346D99;
 }
 .inSet__content-info button:hover {
-  color: #f6f6f6;
+  color: white;
   background-color: #346D99;
 }
 .inSet__content-info button:hover path {
-  fill: #f6f6f6;
+  fill: white;
 }
 @media (min-width: 765px) {
   .inSet__content-info button {
@@ -971,7 +971,7 @@ header .menuBodyChanger--open {
 }
 @media (min-width: 765px) {
   .bestsellery__title::before {
-    background-color: #f6f6f6;
+    background-color: white;
   }
 }
 .bestsellery__articles {
@@ -985,7 +985,7 @@ header .menuBodyChanger--open {
   margin-right: 1%;
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: white;
   border-radius: 2px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -1008,7 +1008,7 @@ header .menuBodyChanger--open {
 }
 
 .accordion {
-  background-color: #f6f6f6;
+  background-color: white;
 }
 @media (min-width: 765px) {
   .accordion {
@@ -1016,7 +1016,7 @@ header .menuBodyChanger--open {
   }
 }
 .accordion-btn {
-  background-color: #f6f6f6;
+  background-color: white;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -1032,7 +1032,7 @@ header .menuBodyChanger--open {
     text-align: center;
     margin-bottom: 30px;
     position: relative;
-    background-color: #f6f6f6;
+    background-color: white;
     pointer-events: none;
     padding: 0;
     text-align: center;
@@ -1164,27 +1164,27 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
   color: #346D99;
-  background-color: #f6f6f6;
+  background-color: white;
   margin-top: 10px;
 }
 .faq__ask button:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .faq__ask button:hover path {
   fill: #346D99;
 }
 .faq__ask button:hover {
-  color: #f6f6f6;
+  color: white;
   background-color: #346D99;
 }
 .faq__ask button:hover path {
-  fill: #f6f6f6;
+  fill: white;
 }
 @media (min-width: 765px) {
   .faq__ask button {
@@ -1241,12 +1241,12 @@ header .menuBodyChanger--open {
   border: 2px solid #346D99;
   transition: all ease-in-out 0.3s;
   font-weight: bold;
-  color: #f6f6f6;
+  color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
   color: #346D99;
-  background-color: #f6f6f6;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -1254,18 +1254,18 @@ header .menuBodyChanger--open {
   padding-right: 40px;
 }
 .reviews__statistics button:hover {
-  background: #f6f6f6;
+  background: white;
   color: #346D99;
 }
 .reviews__statistics button:hover path {
   fill: #346D99;
 }
 .reviews__statistics button:hover {
-  color: #f6f6f6;
+  color: white;
   background-color: #346D99;
 }
 .reviews__statistics button:hover path {
-  fill: #f6f6f6;
+  fill: white;
 }
 .reviews__statistics-chart {
   display: flex;
@@ -1380,7 +1380,7 @@ footer {
   background-color: #346D99;
   padding-top: 35px;
   padding-bottom: 40px;
-  color: #f6f6f6;
+  color: white;
 }
 
 .footerCategories {
@@ -1393,7 +1393,7 @@ footer {
   }
 }
 .footerCategories a {
-  color: #f6f6f6;
+  color: white;
 }
 .footerCategories a:hover {
   text-decoration: underline;
@@ -1484,7 +1484,7 @@ footer {
 .footerAdressLogoAndPartners__logoAndAdres {
   margin-top: 30px;
   display: flex;
-  color: #f6f6f6;
+  color: white;
   justify-content: center;
 }
 .footerAdressLogoAndPartners__logoAndAdres div,

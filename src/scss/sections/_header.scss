@@ -65,7 +65,7 @@ header {
 
         .header-cart {
             width: auto;
-            color: $white;
+            color: white;
             border: 0;
 
             @media (min-width: $mediaquerybreakpoint) {
@@ -81,7 +81,7 @@ header {
             path {
 
                 @media (min-width: $mediaquerybreakpoint) {
-                    fill: $white;
+                    fill: white;
                 }
             }
 
@@ -131,8 +131,8 @@ header {
             display: block;
             position: absolute;
             height: 2px;
-            background: $white;
-            background: $white;
+            background: white;
+            background: white;
             border-radius: 9px;
             opacity: 1;
             width: 60%;
@@ -268,7 +268,7 @@ header {
         a {
             padding: 8px 8px 8px 32px;
             font-size: 25px;
-            color: $white;
+            color: white;
             white-space: nowrap;
             font-weight: bold;
 
